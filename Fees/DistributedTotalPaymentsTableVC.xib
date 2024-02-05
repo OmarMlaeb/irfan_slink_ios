@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TotalDistributedIdentifier" rowHeight="134" id="KGk-i7-Jjw" customClass="DistributedTotalPaymentsTableVC" customModule="Madrasatie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDX-Kh-YTs">
+                        <rect key="frame" x="16" y="8" width="320" height="21"/>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="320" id="DiG-ot-xuf"/>
+                            <constraint firstAttribute="height" constant="21" id="ioW-K5-FMK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUp-Xg-EdL">
+                        <rect key="frame" x="16" y="39" width="154.5" height="21"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Amount">
+                                <attributes>
+                                    <color key="NSColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" metaFont="systemBold" size="17"/>
+                                    <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="4gw-Tq-6Lu">
+                        <rect key="frame" x="186.5" y="39" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKY-ob-WJx">
+                        <rect key="frame" x="16" y="70" width="154.5" height="20.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Paid Amount">
+                                <attributes>
+                                    <color key="NSColor" red="0.26256795020000001" green="0.77802276039999996" blue="0.30816370430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" metaFont="systemBold" size="17"/>
+                                    <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="B6v-05-lig">
+                        <rect key="frame" x="186.5" y="72" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXB-v1-NUQ">
+                        <rect key="frame" x="16" y="100.5" width="154.5" height="21"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Remaining Amount">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" metaFont="systemBold" size="17"/>
+                                    <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1eW-5x-0WN">
+                        <rect key="frame" x="186.5" y="102" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1eW-5x-0WN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DXB-v1-NUQ" secondAttribute="trailing" constant="16" id="12d-ty-Scy"/>
+                    <constraint firstItem="B6v-05-lig" firstAttribute="top" secondItem="4gw-Tq-6Lu" secondAttribute="bottom" constant="15" id="90P-zi-SbH"/>
+                    <constraint firstAttribute="trailing" secondItem="1eW-5x-0WN" secondAttribute="trailing" constant="16" id="BZh-IK-gUS"/>
+                    <constraint firstItem="DXB-v1-NUQ" firstAttribute="top" secondItem="gKY-ob-WJx" secondAttribute="bottom" constant="10" id="DL3-Qb-p5V"/>
+                    <constraint firstItem="gKY-ob-WJx" firstAttribute="top" secondItem="EUp-Xg-EdL" secondAttribute="bottom" constant="10" id="GZ9-RY-n5j"/>
+                    <constraint firstItem="4gw-Tq-6Lu" firstAttribute="leading" secondItem="EUp-Xg-EdL" secondAttribute="trailing" constant="16" id="Ikg-Q7-spH"/>
+                    <constraint firstItem="1eW-5x-0WN" firstAttribute="top" secondItem="B6v-05-lig" secondAttribute="bottom" constant="12" id="PN8-gf-W6b"/>
+                    <constraint firstItem="B6v-05-lig" firstAttribute="leading" secondItem="gKY-ob-WJx" secondAttribute="trailing" constant="16" id="QrY-hS-8BI"/>
+                    <constraint firstItem="EUp-Xg-EdL" firstAttribute="top" secondItem="BDX-Kh-YTs" secondAttribute="bottom" constant="10" id="Urk-TP-Yfx"/>
+                    <constraint firstItem="DXB-v1-NUQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WtW-EV-KTz"/>
+                    <constraint firstItem="BDX-Kh-YTs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XXc-ZL-tAk"/>
+                    <constraint firstItem="BDX-Kh-YTs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="cI5-Vm-64J"/>
+                    <constraint firstItem="B6v-05-lig" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gKY-ob-WJx" secondAttribute="trailing" constant="16" id="hPt-On-fph"/>
+                    <constraint firstItem="gKY-ob-WJx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="iRm-3W-Yee"/>
+                    <constraint firstItem="4gw-Tq-6Lu" firstAttribute="top" secondItem="BDX-Kh-YTs" secondAttribute="bottom" constant="10" id="joj-5u-wel"/>
+                    <constraint firstAttribute="trailing" secondItem="BDX-Kh-YTs" secondAttribute="trailing" constant="16" id="q3y-W5-wYv"/>
+                    <constraint firstAttribute="trailing" secondItem="4gw-Tq-6Lu" secondAttribute="trailing" constant="16" id="tPP-Ec-0KC"/>
+                    <constraint firstItem="EUp-Xg-EdL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="uot-2O-Hnm"/>
+                    <constraint firstItem="4gw-Tq-6Lu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EUp-Xg-EdL" secondAttribute="trailing" constant="16" id="urY-kG-8Zf"/>
+                    <constraint firstAttribute="trailing" secondItem="B6v-05-lig" secondAttribute="trailing" constant="16" id="xgd-09-Xal"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amount" destination="4gw-Tq-6Lu" id="Lim-ae-6VA"/>
+                <outlet property="paid" destination="B6v-05-lig" id="mve-q2-d3P"/>
+                <outlet property="remaining" destination="1eW-5x-0WN" id="lQb-LQ-UWj"/>
+            </connections>
+            <point key="canvasLocation" x="438" y="158"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

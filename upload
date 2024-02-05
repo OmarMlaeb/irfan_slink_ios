@@ -1,0 +1,4 @@
+"${PODS_ROOT}/Fabric/upload-symbols" -gsp "${PROJECT_DIR}/Madrasatie/GoogleService-Info.plist" -p ios "${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}"
+
+./Pods/Fabric/upload-symbols -gsp Madrasatie/GoogleService-Info.plist -p ios /Users/aliess/Library/Developer/Xcode/Archives/2020-02-11/Madrasatie\ 2-11-20\,\ 10.56\ PM.xcarchive/dSYMs/*
+

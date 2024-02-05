@@ -1,0 +1,390 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "0CA-r5-l17"; */
+"0CA-r5-l17.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "0gO-RI-5tu"; */
+"0gO-RI-5tu.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1Fu-hw-7Lw"; */
+"1Fu-hw-7Lw.text" = "Label";
+
+/* Class = "UILabel"; text = "Reason"; ObjectID = "27n-Mn-Q7k"; */
+"27n-Mn-Q7k.text" = "Reason";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2QF-8o-kum"; */
+"2QF-8o-kum.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "2Rs-HT-jvt"; */
+"2Rs-HT-jvt.normalTitle" = "Պահպանել";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2xr-Xw-lYA"; */
+"2xr-Xw-lYA.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3Ka-RG-9wT"; */
+"3Ka-RG-9wT.text" = "Label";
+
+/* Class = "UILabel"; text = "To"; ObjectID = "3nV-10-MMl"; */
+"3nV-10-MMl.text" = "To";
+
+/* Class = "UILabel"; text = "45 students"; ObjectID = "5Ij-Pc-OPc"; */
+"5Ij-Pc-OPc.text" = "45 students";
+
+/* Class = "UILabel"; text = "Students List"; ObjectID = "5KK-Cc-kfB"; */
+"5KK-Cc-kfB.text" = "Students List";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5SL-UT-6Rw"; */
+"5SL-UT-6Rw.text" = "Label";
+
+/* Class = "UILabel"; text = "TIMETABLE"; ObjectID = "64n-ii-KvL"; */
+"64n-ii-KvL.text" = "TIMETABLE";
+
+/* Class = "UILabel"; text = "Month of March"; ObjectID = "6PO-bs-qlk"; */
+"6PO-bs-qlk.text" = "Month of March";
+
+/* Class = "UILabel"; text = "26 March 2018"; ObjectID = "6gG-Pg-d27"; */
+"6gG-Pg-d27.text" = "26 March 2018";
+
+/* Class = "UIButton"; normalTitle = "Leave"; ObjectID = "722-Un-bIG"; */
+"722-Un-bIG.normalTitle" = "Մեկնիլ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7rk-Vu-3FN"; */
+"7rk-Vu-3FN.text" = "Label";
+
+/* Class = "UILabel"; text = "French - Quiz"; ObjectID = "8uo-Uc-R14"; */
+"8uo-Uc-R14.text" = "French - Quiz";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "97m-2e-xme"; */
+"97m-2e-xme.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9Zd-6s-rw0"; */
+"9Zd-6s-rw0.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9te-XT-xPf"; */
+"9te-XT-xPf.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "A5d-Ny-B0x"; */
+"A5d-Ny-B0x.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "AZF-tX-g3B"; */
+"AZF-tX-g3B.text" = "Label";
+
+/* Class = "UILabel"; text = "MARCH 2018"; ObjectID = "BVF-zx-chb"; */
+"BVF-zx-chb.text" = "MARCH 2018";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Bqc-mg-emO"; */
+"Bqc-mg-emO.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "C6w-rB-YiR"; */
+"C6w-rB-YiR.text" = "Label";
+
+/* Class = "UILabel"; text = "Agenda"; ObjectID = "CZV-RE-tmR"; */
+"CZV-RE-tmR.text" = "Agenda";
+
+/* Class = "UILabel"; text = "A new agenda has been added"; ObjectID = "CnH-Ws-Mxz"; */
+"CnH-Ws-Mxz.text" = "A new agenda has been added";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CuM-i0-t6D"; */
+"CuM-i0-t6D.text" = "Label";
+
+/* Class = "UILabel"; text = "Weekly View"; ObjectID = "Die-uC-U4J"; */
+"Die-uC-U4J.text" = "Weekly View";
+
+/* Class = "UILabel"; text = "Monthly View"; ObjectID = "DlO-YB-Y38"; */
+"DlO-YB-Y38.text" = "Monthly View";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Do5-cm-cYW"; */
+"Do5-cm-cYW.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Absence"; ObjectID = "EtD-fJ-CBz"; */
+"EtD-fJ-CBz.normalTitle" = "Բացակայութիւն";
+
+/* Class = "UIButton"; normalTitle = "E1"; ObjectID = "EwS-fg-ikA"; */
+"EwS-fg-ikA.normalTitle" = "E1";
+
+/* Class = "UILabel"; text = "Add member"; ObjectID = "F0s-jm-sLp"; */
+"F0s-jm-sLp.text" = "Add member";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GeN-31-n6V"; */
+"GeN-31-n6V.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Gft-OH-g3J"; */
+"Gft-OH-g3J.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "View More"; ObjectID = "GjS-Bj-Hho"; */
+"GjS-Bj-Hho.normalTitle" = "View More";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "GwW-WU-Kv5"; */
+"GwW-WU-Kv5.text" = "2";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HGB-0w-MfX"; */
+"HGB-0w-MfX.text" = "Label";
+
+/* Class = "UILabel"; text = "Today at 5:30 PM"; ObjectID = "IP3-zy-tIX"; */
+"IP3-zy-tIX.text" = "Today at 5:30 PM";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "If9-3D-jO3"; */
+"If9-3D-jO3.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JZp-s4-dQf"; */
+"JZp-s4-dQf.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Choose exam group here"; ObjectID = "KUU-3V-7rW"; */
+"KUU-3V-7rW.placeholder" = "Choose exam group here";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "L5a-mu-s50"; */
+"L5a-mu-s50.text" = "Label";
+
+/* Class = "UILabel"; text = "Hi janice, how are you hope everything"; ObjectID = "LLg-Wg-Cqh"; */
+"LLg-Wg-Cqh.text" = "Hi janice, how are you hope everything";
+
+/* Class = "UILabel"; text = "MARCH 2018"; ObjectID = "LMx-l0-fFl"; */
+"LMx-l0-fFl.text" = "MARCH 2018";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ljw-N3-dXq"; */
+"Ljw-N3-dXq.text" = "Label";
+
+/* Class = "UILabel"; text = "Upload a file"; ObjectID = "Ls9-oM-lLm"; */
+"Ls9-oM-lLm.text" = "Upload a file";
+
+/* Class = "UILabel"; text = "MARCH 2018"; ObjectID = "MSe-yP-7XV"; */
+"MSe-yP-7XV.text" = "MARCH 2018";
+
+/* Class = "UILabel"; text = "Hi janice, how are you hope everything"; ObjectID = "NV1-1y-oMg"; */
+"NV1-1y-oMg.text" = "Hi janice, how are you hope everything";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "NaR-Pw-ahg"; */
+"NaR-Pw-ahg.normalTitle" = "Պահպանել";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NqI-0M-e42"; */
+"NqI-0M-e42.text" = "Label";
+
+/* Class = "UILabel"; text = "Absence"; ObjectID = "PTH-A5-yWg"; */
+"PTH-A5-yWg.text" = "Absence";
+
+/* Class = "UILabel"; text = "Month of March"; ObjectID = "PlL-Hk-3fa"; */
+"PlL-Hk-3fa.text" = "Month of March";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "RVL-oh-WuM"; */
+"RVL-oh-WuM.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Notifications"; ObjectID = "RcX-jE-fcX"; */
+"RcX-jE-fcX.title" = "Notifications";
+
+/* Class = "UITextField"; placeholder = "Event title is typed here"; ObjectID = "SE1-lw-ny4"; */
+"SE1-lw-ny4.placeholder" = "Event title is typed here";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "STX-z8-QPe"; */
+"STX-z8-QPe.text" = "Label";
+
+/* Class = "UILabel"; text = "James Doe"; ObjectID = "SVe-U2-Ek8"; */
+"SVe-U2-Ek8.text" = "James Doe";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Saj-Pi-WGG"; */
+"Saj-Pi-WGG.text" = "Label";
+
+/* Class = "UILabel"; text = "Jamie Doe"; ObjectID = "Sqa-BJ-OT4"; */
+"Sqa-BJ-OT4.text" = "Jamie Doe";
+
+/* Class = "UILabel"; text = "Jamie Doe"; ObjectID = "T7X-50-y5D"; */
+"T7X-50-y5D.text" = "Jamie Doe";
+
+/* Class = "UILabel"; text = "James Doe"; ObjectID = "T85-bF-kyN"; */
+"T85-bF-kyN.text" = "James Doe";
+
+/* Class = "UILabel"; text = "TIMETABLE"; ObjectID = "TLp-nU-Z41"; */
+"TLp-nU-Z41.text" = "TIMETABLE";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "UDZ-sR-UHZ"; */
+"UDZ-sR-UHZ.normalTitle" = "Հանցնել";
+
+/* Class = "UILabel"; text = "99"; ObjectID = "UGi-Py-cKx"; */
+"UGi-Py-cKx.text" = "99";
+
+/* Class = "UIButton"; normalTitle = "Choose"; ObjectID = "UoL-xg-6YX"; */
+"UoL-xg-6YX.normalTitle" = "Choose";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VBI-Si-X4y"; */
+"VBI-Si-X4y.text" = "Label";
+
+/* Class = "UILabel"; text = "26 March 2018"; ObjectID = "Vet-7H-sTQ"; */
+"Vet-7H-sTQ.text" = "26 March 2018";
+
+/* Class = "UILabel"; text = "No Mails!"; ObjectID = "WHP-mQ-eH2"; */
+"WHP-mQ-eH2.text" = "No Mails!";
+
+/* Class = "UILabel"; text = "Greetings"; ObjectID = "X8c-6J-DXE"; */
+"X8c-6J-DXE.text" = "Greetings";
+
+/* Class = "UILabel"; text = "Average 1 - E"; ObjectID = "Xtb-F0-lL4"; */
+"Xtb-F0-lL4.text" = "Average 1 - E";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Y1A-MK-ISB"; */
+"Y1A-MK-ISB.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Y7Y-RD-PS7"; */
+"Y7Y-RD-PS7.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YZm-Si-PVB"; */
+"YZm-Si-PVB.text" = "Label";
+
+/* Class = "UILabel"; text = "Subject"; ObjectID = "Yca-Cu-IaC"; */
+"Yca-Cu-IaC.text" = "Subject";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "ZGt-HT-tD6"; */
+"ZGt-HT-tD6.text" = "2";
+
+/* Class = "UITextField"; placeholder = "Subject is typed here"; ObjectID = "Zos-Ad-n6y"; */
+"Zos-Ad-n6y.placeholder" = "Subject is typed here";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "Zzw-iy-abr"; */
+"Zzw-iy-abr.normalTitle" = "Հանցնել";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aCe-Sm-aUb"; */
+"aCe-Sm-aUb.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "apM-g0-VG2"; */
+"apM-g0-VG2.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "azg-kD-AqF"; */
+"azg-kD-AqF.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "cq1-cq-q2p"; */
+"cq1-cq-q2p.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "dAb-ec-ZeY"; */
+"dAb-ec-ZeY.normalTitle" = "Պահպանել";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dSP-BY-2hO"; */
+"dSP-BY-2hO.text" = "Label";
+
+/* Class = "UILabel"; text = "MARCH 2018"; ObjectID = "eAS-Ii-JTD"; */
+"eAS-Ii-JTD.text" = "MARCH 2018";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ePG-Wq-Lqk"; */
+"ePG-Wq-Lqk.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "edE-h3-Rnu"; */
+"edE-h3-Rnu.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Quiz title is typed here"; ObjectID = "edq-aN-TyR"; */
+"edq-aN-TyR.placeholder" = "Quiz title is typed here";
+
+/* Class = "UILabel"; text = "KG 1 - Section C"; ObjectID = "fDC-TY-ynO"; */
+"fDC-TY-ynO.text" = "KG 1 - Section C";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fdh-8d-naW"; */
+"fdh-8d-naW.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ffW-L2-uG2"; */
+"ffW-L2-uG2.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gA4-3Q-iaI"; */
+"gA4-3Q-iaI.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gUw-fB-wVT"; */
+"gUw-fB-wVT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Over 100"; ObjectID = "giy-Gs-vpZ"; */
+"giy-Gs-vpZ.text" = "Over 100";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "h4i-xe-pnF"; */
+"h4i-xe-pnF.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hnx-sc-7mG"; */
+"hnx-sc-7mG.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hzX-Kh-Hxy"; */
+"hzX-Kh-Hxy.text" = "Label";
+
+/* Class = "UILabel"; text = "Cancel"; ObjectID = "iwO-6D-u29"; */
+"iwO-6D-u29.text" = "Cancel";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "j1g-nW-CeF"; */
+"j1g-nW-CeF.text" = "Label";
+
+/* Class = "UILabel"; text = "Agenda"; ObjectID = "j6x-bO-1Tc"; */
+"j6x-bO-1Tc.text" = "Agenda";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "jpg-ei-6Ay"; */
+"jpg-ei-6Ay.text" = "2";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jvu-pe-6ux"; */
+"jvu-pe-6ux.text" = "Label";
+
+/* Class = "UILabel"; text = "Message"; ObjectID = "kWc-Jf-A4f"; */
+"kWc-Jf-A4f.text" = "Message";
+
+/* Class = "UIButton"; normalTitle = "Request Leave or Absence"; ObjectID = "kpc-kr-IZ0"; */
+"kpc-kr-IZ0.normalTitle" = "Արձակուրդ մը կամ բացակայութիւն մը ճշդել";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ky5-MI-W5Q"; */
+"ky5-MI-W5Q.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lT2-6n-6UA"; */
+"lT2-6n-6UA.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Mark as unread"; ObjectID = "lZe-gf-XXM"; */
+"lZe-gf-XXM.normalTitle" = "Mark as unread";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lpk-8J-Bu9"; */
+"lpk-8J-Bu9.text" = "Label";
+
+/* Class = "UILabel"; text = "Cancel"; ObjectID = "mYH-u2-loP"; */
+"mYH-u2-loP.text" = "Cancel";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oVL-cm-FKb"; */
+"oVL-cm-FKb.text" = "Label";
+
+/* Class = "UILabel"; text = "14 November 2018 00:00:00"; ObjectID = "owA-Ry-0BX"; */
+"owA-Ry-0BX.text" = "14 November 2018 00:00:00";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "p6w-gi-IE9"; */
+"p6w-gi-IE9.text" = "Label";
+
+/* Class = "UILabel"; text = "Yearly View"; ObjectID = "p8D-fT-mhB"; */
+"p8D-fT-mhB.text" = "Yearly View";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "q3h-3z-6Od"; */
+"q3h-3z-6Od.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "qEq-A8-Pm1"; */
+"qEq-A8-Pm1.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "qIi-5F-FEe"; */
+"qIi-5F-FEe.normalTitle" = "Պահպանել";
+
+/* Class = "UILabel"; text = "26 March 2018 at 5:30 PM"; ObjectID = "qTq-Kf-qKv"; */
+"qTq-Kf-qKv.text" = "26 March 2018 at 5:30 PM";
+
+/* Class = "UITextField"; text = "80"; ObjectID = "rei-tD-el2"; */
+"rei-tD-el2.text" = "80";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "s0c-Eq-njZ"; */
+"s0c-Eq-njZ.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Select All"; ObjectID = "shz-a1-zyz"; */
+"shz-a1-zyz.normalTitle" = "Select All";
+
+/* Class = "UILabel"; text = "Month of March"; ObjectID = "tO4-lG-3SJ"; */
+"tO4-lG-3SJ.text" = "Month of March";
+
+/* Class = "UILabel"; text = "Greetings"; ObjectID = "v6a-rY-qHc"; */
+"v6a-rY-qHc.text" = "Greetings";
+
+/* Class = "UILabel"; text = "Jamie Doe"; ObjectID = "vPd-47-i2M"; */
+"vPd-47-i2M.text" = "Jamie Doe";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vRZ-xT-mY8"; */
+"vRZ-xT-mY8.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wF2-tl-7Bn"; */
+"wF2-tl-7Bn.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wsF-Zj-hWf"; */
+"wsF-Zj-hWf.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ycz-gM-pDY"; */
+"ycz-gM-pDY.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zHF-ui-iLN"; */
+"zHF-ui-iLN.text" = "Label";

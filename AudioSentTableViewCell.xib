@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AudioSentTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="audioSentReuse" rowHeight="108" id="97y-yR-KaV" customClass="AudioSentTableViewCell" customModule="IRFAN_Schools" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="97y-yR-KaV" id="vLw-3p-aYm">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0m-HL-Hda">
+                        <rect key="frame" x="60" y="12" width="303" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="111" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:11 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd2-gx-0ZQ">
+                                <rect key="frame" x="8" y="29" width="43" height="13"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTq-9f-Lj7">
+                                <rect key="frame" x="61" y="2" width="232" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" tag="523" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcA-Lq-1OO">
+                                        <rect key="frame" x="5" y="3" width="24" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="vhe-tJ-AQT"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="playButtonTapped:" destination="97y-yR-KaV" eventType="touchUpInside" id="UrC-vY-BQK"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" tag="524" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jG0-p6-jch">
+                                        <rect key="frame" x="35" y="5" width="191" height="31"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="97y-yR-KaV" eventType="valueChanged" id="wBC-4u-WvK"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="CcA-Lq-1OO" secondAttribute="bottom" constant="3" id="0YJ-iH-pfR"/>
+                                    <constraint firstItem="CcA-Lq-1OO" firstAttribute="leading" secondItem="VTq-9f-Lj7" secondAttribute="leading" constant="5" id="7pQ-24-qsp"/>
+                                    <constraint firstAttribute="height" constant="40" id="FDD-oE-GPn"/>
+                                    <constraint firstAttribute="bottom" secondItem="jG0-p6-jch" secondAttribute="bottom" constant="5" id="FOP-Ex-Fd5"/>
+                                    <constraint firstItem="jG0-p6-jch" firstAttribute="leading" secondItem="CcA-Lq-1OO" secondAttribute="trailing" constant="8" id="aHz-yD-TIi"/>
+                                    <constraint firstAttribute="trailing" secondItem="jG0-p6-jch" secondAttribute="trailing" constant="8" id="dLg-Gl-TLp"/>
+                                    <constraint firstItem="CcA-Lq-1OO" firstAttribute="top" secondItem="VTq-9f-Lj7" secondAttribute="top" constant="3" id="ihf-zW-8K3"/>
+                                    <constraint firstItem="jG0-p6-jch" firstAttribute="top" secondItem="VTq-9f-Lj7" secondAttribute="top" constant="5" id="mjB-p8-ciM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VTq-9f-Lj7" secondAttribute="trailing" constant="10" id="29T-ic-QuX"/>
+                            <constraint firstItem="yd2-gx-0ZQ" firstAttribute="leading" secondItem="B0m-HL-Hda" secondAttribute="leading" constant="8" id="BwT-Ha-npw"/>
+                            <constraint firstAttribute="bottom" secondItem="VTq-9f-Lj7" secondAttribute="bottom" constant="8" id="GYb-2m-wmz"/>
+                            <constraint firstItem="VTq-9f-Lj7" firstAttribute="leading" secondItem="yd2-gx-0ZQ" secondAttribute="trailing" constant="10" id="Pcb-dd-rT1"/>
+                            <constraint firstAttribute="height" constant="50" id="SVR-kd-n0V"/>
+                            <constraint firstAttribute="bottom" secondItem="yd2-gx-0ZQ" secondAttribute="bottom" constant="8" id="d3I-IT-Kr7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="B0m-HL-Hda" firstAttribute="trailing" secondItem="vLw-3p-aYm" secondAttribute="trailingMargin" constant="8" id="ZN1-J3-A5f"/>
+                    <constraint firstItem="B0m-HL-Hda" firstAttribute="leading" secondItem="vLw-3p-aYm" secondAttribute="leadingMargin" constant="40" id="mYi-Hu-O8Q"/>
+                    <constraint firstItem="B0m-HL-Hda" firstAttribute="top" secondItem="vLw-3p-aYm" secondAttribute="topMargin" id="qWb-lZ-fEO"/>
+                    <constraint firstItem="B0m-HL-Hda" firstAttribute="bottom" secondItem="vLw-3p-aYm" secondAttribute="bottomMargin" id="vyg-zs-L2B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="audioSlider" destination="jG0-p6-jch" id="Pjh-ih-Ppd"/>
+                <outlet property="playButton" destination="CcA-Lq-1OO" id="7B0-EN-RzU"/>
+                <outlet property="sentDate" destination="yd2-gx-0ZQ" id="hFV-Z7-wD6"/>
+                <outlet property="view" destination="VTq-9f-Lj7" id="BJd-ji-l4K"/>
+            </connections>
+            <point key="canvasLocation" x="-73" y="-47"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

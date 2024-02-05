@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>215954523873-slcmapvmq1f31q6sirmkgncd24v4j9na.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.215954523873-slcmapvmq1f31q6sirmkgncd24v4j9na</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>215954523873-5pkmbcspl2bt5nqiag7ok703trs9visk.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC2zyd_QipHcmFaURFEDkC14Uh3pd7N5Q4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>215954523873</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>irfanschools.app.wb</string>
+	<key>PROJECT_ID</key>
+	<string>irfan-schools</string>
+	<key>STORAGE_BUCKET</key>
+	<string>irfan-schools.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:215954523873:ios:5a07b7a029b5dfd21659a0</string>
+	<key>DATABASE_URL</key>
+	<string>https://irfan-schools.firebaseio.com</string>
+</dict>
+</plist>

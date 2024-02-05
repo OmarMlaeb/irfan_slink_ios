@@ -1,0 +1,135 @@
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "1qM-px-aCX"; */
+"1qM-px-aCX.text" = "تسجيل الدّخول";
+
+/* Class = "UITextField"; placeholder = "Activation Code"; ObjectID = "25x-tN-KlZ"; */
+"25x-tN-KlZ.placeholder" = "رمز التّفعيل";
+
+/* Class = "UIViewController"; title = "LanguageVC"; ObjectID = "5uQ-BS-Tad"; */
+"5uQ-BS-Tad.title" = "LanguageVC";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "8Y8-5p-mif"; */
+"8Y8-5p-mif.normalTitle" = "إلغاء";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "ABT-Rl-suZ"; */
+"ABT-Rl-suZ.text" = "English";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "DzD-ye-ovf"; */
+"DzD-ye-ovf.placeholder" = "كلمة المرور";
+
+/* Class = "UILabel"; text = "العربية"; ObjectID = "IVR-xA-a2m"; */
+"IVR-xA-a2m.text" = "العربية";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "KkK-n8-Cbg"; */
+"KkK-n8-Cbg.text" = "أهلا بك";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NFS-Kc-l2F"; */
+"NFS-Kc-l2F.text" = "Label";
+
+/* Class = "UILabel"; text = "Help Center"; ObjectID = "OKC-yY-OXc"; */
+"OKC-yY-OXc.text" = "مركز المساعدة";
+
+/* Class = "UILabel"; text = "Send me an e-mail to:"; ObjectID = "P9b-nN-PbL"; */
+"P9b-nN-PbL.text" = "أرسل لي رسالة بريد إلكتروني إلى:";
+
+/* Class = "UILabel"; text = "laurine@doe.com"; ObjectID = "PJi-Dr-vyl"; */
+"PJi-Dr-vyl.text" = "laurine@doe.com";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Q6M-DF-Qjf"; */
+"Q6M-DF-Qjf.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "Tfc-Oe-Ypm"; */
+"Tfc-Oe-Ypm.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "School Activation"; ObjectID = "UVp-91-Kt6"; */
+"UVp-91-Kt6.text" = "تفعيل هذه المدرسة";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "UiZ-eA-zUb"; */
+"UiZ-eA-zUb.placeholder" = "اسم المستخدم";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "XaI-oU-kVm"; */
+"XaI-oU-kVm.placeholder" = "تأكيد كلمة المرور";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Xkf-X2-bQd"; */
+"Xkf-X2-bQd.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZAi-xW-l1V"; */
+"ZAi-xW-l1V.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZmB-ZY-6ln"; */
+"ZmB-ZY-6ln.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Ask us a question..."; ObjectID = "Zwp-Vq-Z2e"; */
+"Zwp-Vq-Z2e.placeholder" = "اطرح علينا سؤالاً ...";
+
+/* Class = "UILabel"; text = "+961 3 123 456"; ObjectID = "cdv-6Z-zPI"; */
+"cdv-6Z-zPI.text" = "+961 3 123 456";
+
+/* Class = "UILabel"; text = "Or login using"; ObjectID = "cfl-wB-gpe"; */
+"cfl-wB-gpe.text" = "أو تسجيل الدّخول عبر استخدام";
+
+/* Class = "UILabel"; text = "Change Password"; ObjectID = "czk-tJ-eT3"; */
+"czk-tJ-eT3.text" = "تغيير كلمة المرور";
+
+/* Class = "UIButton"; normalTitle = "Contact School"; ObjectID = "e64-Wx-iey"; */
+"e64-Wx-iey.normalTitle" = "الإتصال بالمدرسة";
+
+/* Class = "UITextField"; placeholder = "+961 3 123 456"; ObjectID = "eWS-yU-4cx"; */
+"eWS-yU-4cx.placeholder" = "+961 3 123 456";
+
+/* Class = "UILabel"; text = "I agree on the terms and conditions"; ObjectID = "efC-sC-xXe"; */
+"efC-sC-xXe.text" = "أوافق على الشروط والأحكام";
+
+/* Class = "UIViewController"; title = "ActivationVC"; ObjectID = "fqL-JS-TWH"; */
+"fqL-JS-TWH.title" = "ActivationVC";
+
+/* Class = "UIButton"; normalTitle = "Scan QR Code"; ObjectID = "iSJ-0X-zBf"; */
+"iSJ-0X-zBf.normalTitle" = "مسح رمز QR";
+
+/* Class = "UILabel"; text = "مرحباً"; ObjectID = "imY-6B-CDh"; */
+"imY-6B-CDh.text" = "مرحباً";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "jCa-cE-c5n"; */
+"jCa-cE-c5n.normalTitle" = "التالى";
+
+/* Class = "UILabel"; text = "Français"; ObjectID = "kah-HG-uVp"; */
+"kah-HG-uVp.text" = "Français";
+
+/* Class = "UILabel"; text = "I do not have a username and password"; ObjectID = "kkO-On-yvJ"; */
+"kkO-On-yvJ.text" = "ليس لدي اسم مستخدم وكلمة مرور";
+
+/* Class = "UIButton"; normalTitle = "?"; ObjectID = "kqm-7i-AWk"; */
+"kqm-7i-AWk.normalTitle" = "؟";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "lvT-Zl-G8m"; */
+"lvT-Zl-G8m.normalTitle" = "حفظ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "qji-xM-i6y"; */
+"qji-xM-i6y.text" = "Label";
+
+/* Class = "UIViewController"; title = "LoginVC"; ObjectID = "uah-Mw-xkL"; */
+"uah-Mw-xkL.title" = "LoginVC";
+
+/* Class = "UILabel"; text = "Reset Password"; ObjectID = "ura-nb-ztn"; */
+"ura-nb-ztn.text" = "إعادة تعيين كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "v2Q-rj-uwh"; */
+"v2Q-rj-uwh.placeholder" = "كلمه المرور";
+
+/* Class = "UILabel"; text = "OTP"; ObjectID = "wGI-cs-umd"; */
+"wGI-cs-umd.text" = "OTP";
+
+/* Class = "UILabel"; text = "Remember me"; ObjectID = "xJB-oK-B9G"; */
+"xJB-oK-B9G.text" = "تذكّر بيناتي";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "xQe-WG-VyN"; */
+"xQe-WG-VyN.normalTitle" = "تقديم";
+
+/* Class = "UILabel"; text = "Gmail"; ObjectID = "xcT-T9-WlV"; */
+"xcT-T9-WlV.text" = "Gmail";
+
+/* Class = "UILabel"; text = "Microsoft Office"; ObjectID = "yfk-YO-ACD"; */
+"yfk-YO-ACD.text" = "Microsoft Office";
+
+/* Class = "UILabel"; text = "Bonjour"; ObjectID = "za5-uA-Tjc"; */
+"za5-uA-Tjc.text" = "Bonjour";
