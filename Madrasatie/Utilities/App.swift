@@ -286,7 +286,7 @@ class App{
                 var classes = [Class]()
                 if let classesData = user.value(forKey: "classes") as? NSOrderedSet {
                     for case let classData as NSManagedObject in classesData {
-                        let classObject = Class(batchId: classData.integer(forKey: "batchId"), className: classData.string(forKey: "classname"), imperiumCode: classData.string(forKey: "imperiumCode"))
+                        let classObject = Class(classId: classData.integer(forKey: "classId"),batchId: classData.integer(forKey: "batchId"), className: classData.string(forKey: "classname"), imperiumCode: classData.string(forKey: "imperiumCode"))
                         classes.append(classObject)
                     }
                 }

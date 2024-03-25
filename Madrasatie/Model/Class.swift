@@ -9,6 +9,7 @@
 import Foundation
 
 struct Class{
+    var classId: Int
     var batchId: Int
     var className: String
     var imperiumCode: String

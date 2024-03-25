@@ -2679,7 +2679,7 @@
 				CODE_SIGN_ENTITLEMENTS = Madrasatie.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 44;
+				CURRENT_PROJECT_VERSION = 46;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M43BHY9R45;
 				ENABLE_BITCODE = NO;
@@ -2704,7 +2704,7 @@
 					"$(PROJECT_DIR)/Madrasati/Unity/Libraries",
 					"$(PROJECT_DIR)/Madrasatie/Unity/birthday/Libraries",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = irfanschools.app.wb;
 				PRODUCT_NAME = "IRFAN Schools";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2724,7 +2724,7 @@
 				CODE_SIGN_ENTITLEMENTS = Madrasatie.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 44;
+				CURRENT_PROJECT_VERSION = 46;
 				DEVELOPMENT_TEAM = M43BHY9R45;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "$(inheirted)";
@@ -2748,7 +2748,7 @@
 					"$(PROJECT_DIR)/Madrasati/Unity/Libraries",
 					"$(PROJECT_DIR)/Madrasatie/Unity/birthday/Libraries",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = irfanschools.app.wb;
 				PRODUCT_NAME = "IRFAN Schools";
 				PROVISIONING_PROFILE_SPECIFIER = "";

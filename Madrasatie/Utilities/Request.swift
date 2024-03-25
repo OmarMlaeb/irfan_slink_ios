@@ -224,8 +224,8 @@ class Request{
   
                             
                             
-                            var userData = User(token: response.stringValue, userName: username ?? "", schoolId: schoolId ?? "", firstName: "", lastName: "", userId: id ?? 0, email: email, googleToken: "", gender: "", cycle: "", photo: "", userType:userType, batchId: 1, imperiumCode: "", className: "", childrens: [], classes: classesArray, privileges: [], firstLogin: true, admissionNo: "", bdDate: Date(), isBdChecked: false, blocked: false, password: password)
-                            
+                            var userData = User(token: response.stringValue, userName: username ?? "", schoolId: schoolId ?? "", firstName: "", lastName: "", userId: id ?? 0, email: email, googleToken: "", gender: "", cycle: "", photo: "", userType:userType, batchId: 1, imperiumCode: "", className: "", childrens: [], classes: classesArray, privileges: [], firstLogin: false, admissionNo: "", bdDate: Date(), isBdChecked: false, blocked: false, password: password)
+
                             print("SAVINGGGG EMAIL1 ", userData.email)
                             
                             if(role.lowercased() == "student"){
@@ -244,10 +244,10 @@ class Request{
                                     print(className)
                                     print(studentId)
 
-                                    let cls = Class(batchId: Int(sectionId) ?? 0, className: "\(className)-\(sectionName)", imperiumCode: "")
+                                    let cls = Class(classId: 0, batchId: Int(sectionId) ?? 0, className: "\(className)-\(sectionName)", imperiumCode: "")
                                     classesArray.append(cls)
-                                    userData = User(token: response.stringValue, userName: username , schoolId: schoolId , firstName: "", lastName: "", userId: id, email: email, googleToken: "", gender: "", cycle: "", photo: "", userType: userType, batchId: Int(sectionId) ?? 0, imperiumCode: "", className: "\(className)-\(sectionName)", childrens: [], classes: classesArray, privileges: [], firstLogin: true, admissionNo: studentId, bdDate: Date(), isBdChecked: false, blocked: false, password: password)
-                                    
+                                    userData = User(token: response.stringValue, userName: username , schoolId: schoolId , firstName: "", lastName: "", userId: id, email: email, googleToken: "", gender: "", cycle: "", photo: "", userType: userType, batchId: Int(sectionId) ?? 0, imperiumCode: "", className: "\(className)-\(sectionName)", childrens: [], classes: classesArray, privileges: [], firstLogin: false, admissionNo: studentId, bdDate: Date(), isBdChecked: false, blocked: false, password: password)
+
                                     print("SAVINGGGG EMAIL2 ", userData.email)
                                     
                                     print("user user final: \(userData)")
@@ -264,8 +264,8 @@ class Request{
                                     let employee_id = data["id"].stringValue
                                     print("User type received11:", employee_id)
 
-                                    userData = User(token: response.stringValue, userName: username ?? "", schoolId: schoolId ?? "", firstName: "", lastName: "", userId: id, email: email, googleToken: "", gender: "", cycle: "", photo: "", userType:userType, batchId: 1, imperiumCode: employee_id, className: "", childrens: [], classes: classesArray, privileges: [], firstLogin: true, admissionNo: "", bdDate: Date(), isBdChecked: false, blocked: false, password: password)
-                                    
+                                    userData = User(token: response.stringValue, userName: username ?? "", schoolId: schoolId ?? "", firstName: "", lastName: "", userId: id, email: email, googleToken: "", gender: "", cycle: "", photo: "", userType:userType, batchId: 1, imperiumCode: employee_id, className: "", childrens: [], classes: classesArray, privileges: [], firstLogin: false, admissionNo: "", bdDate: Date(), isBdChecked: false, blocked: false, password: password)
+
                                     print("SAVINGGGG EMAIL3 ", userData.email)
                                     
                                     print("user user final: \(userData)")
@@ -308,8 +308,8 @@ class Request{
                                     
                                   
                                     
-                                    var userData = User(token: response.stringValue, userName: username ?? "", schoolId: schoolId ?? "", firstName: "", lastName: "", userId: id, email: email, googleToken: "", gender: "", cycle: "", photo: "", userType:userType, batchId: 1, imperiumCode: "", className: "", childrens: childrenArray, classes: classesArray, privileges: [], firstLogin: true, admissionNo: "", bdDate: Date(), isBdChecked: false, blocked: false, password: password)
-                                    
+                                    var userData = User(token: response.stringValue, userName: username ?? "", schoolId: schoolId ?? "", firstName: "", lastName: "", userId: id, email: email, googleToken: "", gender: "", cycle: "", photo: "", userType:userType, batchId: 1, imperiumCode: "", className: "", childrens: childrenArray, classes: classesArray, privileges: [], firstLogin: false, admissionNo: "", bdDate: Date(), isBdChecked: false, blocked: false, password: password)
+
                                     print("SAVINGGGG EMAIL4 ", userData.email)
                                     
                                     print("user user final: \(userData)")
@@ -522,10 +522,10 @@ class Request{
                             let email = data["email"].stringValue
                             let schoolId = data["userRole"]["schoolId"].stringValue
 
-//                            let blocked = userInfo["blocked"].boolValue
+                            let blocked = data["isBlock"].boolValue
+                            
                             let lastName = data["lastName"].stringValue
-//                            let firstTime = userInfo["first_login"].boolValue
-                            let firstTime = false
+                            let firstTime = data["is_first_login"].boolValue
                             
 
                             
@@ -746,8 +746,8 @@ class Request{
                                 print("Error: \(error)")
                             }
                             
-                            var userData = User(token: token, userName: username, schoolId: schoolId, firstName: firstName, lastName: lastName, userId: id, email: email, googleToken: "", gender: gender, cycle: "", photo: photo, userType: userType, batchId: 0, imperiumCode: "", className: "", childrens: childrenArray, classes: classesArray, privileges: privilegeArray, firstLogin: firstTime, admissionNo: "", bdDate: bithday ?? Date(), isBdChecked: true, blocked: false, password: password)
-                            
+                            var userData = User(token: token, userName: username, schoolId: schoolId, firstName: firstName, lastName: lastName, userId: id, email: email, googleToken: "", gender: gender, cycle: "", photo: photo, userType: userType, batchId: 0, imperiumCode: "", className: "", childrens: childrenArray, classes: classesArray, privileges: privilegeArray, firstLogin: firstTime, admissionNo: "", bdDate: bithday ?? Date(), isBdChecked: true, blocked: blocked, password: password)
+
                             print("SAVINGGGG EMAIL5 ", userData.email)
                             
                             if(type.lowercased() == "student"){
@@ -767,11 +767,11 @@ class Request{
                                     print(className)
                                     print(studentId)
                                     
-                                    let cls = Class(batchId: Int(sectionId) ?? 0, className: "\(className)-\(sectionName)", imperiumCode: "")
+                                    let cls = Class(classId: 0, batchId: Int(sectionId) ?? 0, className: "\(className)-\(sectionName)", imperiumCode: "")
                                     classesArray.append(cls)
                                     
-                                    userData = User(token: token, userName: username, schoolId: schoolId, firstName: firstName, lastName: lastName, userId: id, email: email, googleToken: "", gender: gender, cycle: "", photo: photo, userType: userType, batchId: Int(sectionId) ?? 0, imperiumCode: "", className: "\(className)-\(sectionName)", childrens: childrenArray, classes: classesArray, privileges: privilegeArray, firstLogin: firstTime, admissionNo: studentId, bdDate: bithday ?? Date(), isBdChecked: true, blocked: false, password: password)
-                                    
+                                    userData = User(token: token, userName: username, schoolId: schoolId, firstName: firstName, lastName: lastName, userId: id, email: email, googleToken: "", gender: gender, cycle: "", photo: photo, userType: userType, batchId: Int(sectionId) ?? 0, imperiumCode: "", className: "\(className)-\(sectionName)", childrens: childrenArray, classes: classesArray, privileges: privilegeArray, firstLogin: firstTime, admissionNo: studentId, bdDate: bithday ?? Date(), isBdChecked: true, blocked: blocked, password: password)
+
                                     print("SAVINGGGG EMAIL6 ", userData.email)
                                     
                                     print("get user details: \(userData)")
@@ -789,8 +789,8 @@ class Request{
                                     let employee_id = data["id"].stringValue
                                     print("User type received11:", employee_id)
 
-                                    var userData = User(token: token, userName: username, schoolId: schoolId, firstName: firstName, lastName: lastName, userId: id, email: email, googleToken: "", gender: gender, cycle: "", photo: photo, userType: userType, batchId: 0, imperiumCode: employee_id, className: "", childrens: childrenArray, classes: classesArray, privileges: privilegeArray, firstLogin: firstTime, admissionNo: "", bdDate: bithday ?? Date(), isBdChecked: true, blocked: false, password: password)
-                                    
+                                    var userData = User(token: token, userName: username, schoolId: schoolId, firstName: firstName, lastName: lastName, userId: id, email: email, googleToken: "", gender: gender, cycle: "", photo: photo, userType: userType, batchId: 0, imperiumCode: employee_id, className: "", childrens: childrenArray, classes: classesArray, privileges: privilegeArray, firstLogin: firstTime, admissionNo: "", bdDate: bithday ?? Date(), isBdChecked: true, blocked: blocked, password: password)
+
                                     print("SAVINGGGG EMAIL7 ", userData.email)
                                     
                                     print("user user final111: \(userData)")
@@ -829,8 +829,8 @@ class Request{
                                     
                                     
                                     
-                                    var userData = User(token: token, userName: username, schoolId: schoolId, firstName: firstName, lastName: lastName, userId: id, email: email, googleToken: "", gender: gender, cycle: "", photo: photo, userType: userType, batchId: 0, imperiumCode: "", className: "", childrens: childrenArray, classes: classesArray, privileges: privilegeArray, firstLogin: firstTime, admissionNo: "", bdDate: bithday ?? Date(), isBdChecked: true, blocked: false, password: password)
-                                    
+                                    var userData = User(token: token, userName: username, schoolId: schoolId, firstName: firstName, lastName: lastName, userId: id, email: email, googleToken: "", gender: gender, cycle: "", photo: photo, userType: userType, batchId: 0, imperiumCode: "", className: "", childrens: childrenArray, classes: classesArray, privileges: privilegeArray, firstLogin: firstTime, admissionNo: "", bdDate: bithday ?? Date(), isBdChecked: true, blocked: blocked, password: password)
+
                                     print("SAVINGGGG EMAIL8 ", userData.email)
                                     
                                     print("get user details: \(userData)")
@@ -5432,7 +5432,7 @@ class Request{
                         let message = data["message"].stringValue
                         var status = 0
                     
-                    if(message.contains("details found")){
+                    if(message.contains("details found") || message.contains("detail found")){
                         status = 200
                     }
                         let dataArray = data["response"]
@@ -5464,17 +5464,19 @@ class Request{
                                 let absenceD = formatter.date(from: absenceDate)
                                 
                                 if self.isDate(absenceD ?? Date(), between: start ?? Date(), and: end ?? Date()){
-                                    
+                                                                    
                                     let fullDay = att.1["isFullDay"].boolValue
                                     if(fullDay){
                                         absence += 1
                                         let d = att.1["absenceDate"].stringValue
                                         absentDates.append(d)
+                                        
+                                        let user = att.1["student"]["user"]
+                                        let id = user["id"].intValue
 
-                                        let id = att.1["id"].intValue
                                         let verified = att.1["isVerified"].boolValue
-                                        let reason = att.1["absenceReason"].stringValue
-                                        let detail = attendanceDetail(id: id, date: d, verified: verified, reason: reason)
+    //                                        let reason = att.1["absenceReason"].stringValue
+                                        let detail = attendanceDetail(id: id, date: d, verified: verified, reason: "")
                                         detailArray.append(detail)
                                     }
                                     else{
@@ -5482,10 +5484,12 @@ class Request{
                                         let d = att.1["absenceDate"].stringValue
                                         latencyDates.append(d)
                                         
-                                        let id = att.1["id"].intValue
+                                        let user = att.1["student"]["user"]
+                                        let id = user["id"].intValue
+                                        
                                         let verified = att.1["isVerified"].boolValue
-                                        let reason = att.1["absenceReason"].stringValue
-                                        let detail = attendanceDetail(id: id, date: d, verified: verified, reason: reason)
+    //                                        let reason = att.1["absenceReason"].stringValue
+                                        let detail = attendanceDetail(id: id, date: d, verified: verified, reason: "")
                                         detailArray.append(detail)
                                         
 
@@ -11488,7 +11492,7 @@ class Request{
                                 let id = object.1["id"].intValue
                                 let name = object.1["name"].stringValue
                                 let code = object.1["imperium_code"].stringValue
-                                let section = Class.init(batchId: id, className: name, imperiumCode: code)
+                                let section = Class.init(classId: id, batchId: id, className: name, imperiumCode: code)
                                 sectionsArray.append(section)
                             }
                             

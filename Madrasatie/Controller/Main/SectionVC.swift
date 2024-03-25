@@ -27,7 +27,7 @@ protocol SectionVCDelegate{
 protocol SectionVCToAgendaDelegate {
     func agendaFilterSectionView(type: Int)
     func switchAgendaChildren(user: User, batchId: Int?, children: Children?)
-    func agendaBatchId(user: User, batchId: Int)
+    func agendaBatchId(user: User, classId: Int, batchId: Int)
     func updateAgendaTheme(theme: AppTheme?)
 }
 
@@ -249,7 +249,7 @@ class SectionVC: ButtonBarPagerTabStripViewController {
         if (user.userType == 2 || user.userType == 1) && !user.classes.isEmpty{
             self.classObject = user.classes[classIndex]
         }else{
-            self.classObject = Class(batchId: 0, className: "", imperiumCode: "")
+            self.classObject = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
         }
         
         //added
@@ -452,11 +452,11 @@ class SectionVC: ButtonBarPagerTabStripViewController {
                 self.classObject = user.classes[classIndex]
             }
             else{
-                self.classObject = Class(batchId: 0, className: "", imperiumCode: "")
+                self.classObject = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
             }
            
         }else{
-            self.classObject = Class(batchId: 0, className: "", imperiumCode: "")
+            self.classObject = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
         }
 //        customizeView()
         weeklyTick.tintColor = App.hexStringToUIColorCst(hex: "#014e80", alpha: 1.0)
@@ -839,7 +839,7 @@ class SectionVC: ButtonBarPagerTabStripViewController {
                         self.classObject = classs
                         if self.sectionAgenda.count > 0{
                             print("choose4: \(self.sectionAgenda.count)")
-                            self.sectionToAgendaDelegate?.agendaBatchId(user: self.user, batchId: classs.batchId)
+                            self.sectionToAgendaDelegate?.agendaBatchId(user: self.user, classId: classs.classId, batchId: classs.batchId)
                         }
                     }else if self.sectionID == 4 {//remarks
                         classs = self.sectionRemarks[ind]
@@ -1848,9 +1848,9 @@ VirtualClassroomViewControllerDelegate, BlendedLearningViewControllerDelegate{
                     let index = self.sectionAgenda.firstIndex(where: {$0.batchId == self.classObject.batchId}) ?? 0
                     self.classObject = self.sectionAgenda[index]
                     self.lbl_class.text = self.sectionAgenda[index].className
-                    self.sectionToAgendaDelegate?.agendaBatchId(user: user, batchId: self.classObject.batchId)
+                    self.sectionToAgendaDelegate?.agendaBatchId(user: user, classId: self.classObject.classId, batchId: self.classObject.batchId)
                 }else{
-                    self.classObject = Class(batchId: 0, className: "", imperiumCode: "")
+                    self.classObject = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
                     self.lbl_class.text = ""
                 }
             }else if self.sectionID == 2{//attendance
@@ -1860,7 +1860,7 @@ VirtualClassroomViewControllerDelegate, BlendedLearningViewControllerDelegate{
                     self.lbl_class.text = self.sectionAttendace[index].className
                     self.sectionToAttendanceDelegate?.attendanceBatchId(batchId: self.classObject.batchId)
                 }else{
-                    self.classObject = Class(batchId: 0, className: "", imperiumCode: "")
+                    self.classObject = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
                     self.lbl_class.text = ""
                 }
             }else if self.sectionID == 4{//remarks
@@ -1870,7 +1870,7 @@ VirtualClassroomViewControllerDelegate, BlendedLearningViewControllerDelegate{
                     self.lbl_class.text = self.sectionRemarks[index].className
                     self.sectionToRemarksDelegate?.remarksBatchId(batchId: self.classObject.batchId)
                 }else{
-                    self.classObject = Class(batchId: 0, className: "", imperiumCode: "")
+                    self.classObject = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
                     self.lbl_class.text = ""
                 }
             }else if self.sectionID == 5{//grades
@@ -1882,7 +1882,7 @@ VirtualClassroomViewControllerDelegate, BlendedLearningViewControllerDelegate{
                     print("sectionToGradesDelegate3")
                     self.sectionToGradesDelegate?.gradesBatchId(batchId: self.classObject.batchId)
                 }else{
-                    self.classObject = Class(batchId: 0, className: "", imperiumCode: "")
+                    self.classObject = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
                     self.lbl_class.text = ""
                 }
             }else if self.sectionID == 1{//Calendar
@@ -1893,7 +1893,7 @@ VirtualClassroomViewControllerDelegate, BlendedLearningViewControllerDelegate{
                     self.lbl_class.text = self.sectionCalendar[index].className
                     self.sectionDelegate?.calendarBatchId(batchId: self.classObject.batchId)
                 }else{
-                    self.classObject = Class(batchId: 0, className: "", imperiumCode: "")
+                    self.classObject = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
                     self.lbl_class.text = ""
                 }
             }
@@ -1906,7 +1906,7 @@ VirtualClassroomViewControllerDelegate, BlendedLearningViewControllerDelegate{
                     print("sectionToBlendedLearningDelegate4")
                     self.sectionToBlendedLearningDelegate?.blendedBatchId(user: user, allClasses: self.sectionBlended, batchId: self.classObject.batchId, className: self.classObject.className)
                 }else{
-                    self.classObject = Class(batchId: 0, className: "", imperiumCode: "")
+                    self.classObject = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
                     self.lbl_class.text = ""
                 }
             }
@@ -1919,7 +1919,7 @@ VirtualClassroomViewControllerDelegate, BlendedLearningViewControllerDelegate{
                     print("sectionToTimetableDelegate4")
                     self.sectionToTimeTableDelegate?.timeTableBatchId(user: user, batchId: self.classObject.batchId)
                 }else{
-                    self.classObject = Class(batchId: 0, className: "", imperiumCode: "")
+                    self.classObject = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
                     self.lbl_class.text = ""
                 }
             }
@@ -1933,14 +1933,14 @@ VirtualClassroomViewControllerDelegate, BlendedLearningViewControllerDelegate{
                 }else{
                     print("classindex3")
                     classIndex = 0
-                    self.classObject = self.user.classes.first ?? Class(batchId: 0, className: "", imperiumCode: "")
+                    self.classObject = self.user.classes.first ?? Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
                     lbl_class.text = self.classObject.className
                 }
             }
         }else{//other users
             print("classindex4")
             classIndex = 0
-            self.classObject = Class.init(batchId: self.user.batchId, className: self.user.className, imperiumCode: self.user.imperiumCode)
+            self.classObject = Class.init(classId: 0,batchId: self.user.batchId, className: self.user.className, imperiumCode: self.user.imperiumCode)
             lbl_class.text = self.classObject.className
         }
     }
@@ -2133,8 +2133,7 @@ extension SectionVC{
                 self.sectionRemarks.removeAll()
                 self.sectionBlended.removeAll()
                 for section in sectionData!{
-                    let classIn = Class.init(batchId: section.batchId, className: section.displayName, imperiumCode: section.imperiumCode)
-                   
+                    let classIn = Class.init(classId: section.cayId, batchId: section.batchId, className: section.displayName, imperiumCode: section.imperiumCode)
                     switch section.module{
                     case 1://calendar
                         print("batchid1: \(classIn.className)")
@@ -2164,7 +2163,7 @@ extension SectionVC{
                     self.sectionToAttendanceDelegate?.attendanceBatchId(batchId: self.sectionAttendace.first?.batchId ?? 0)
                 }
                 if self.sectionAgenda.count > 0{
-                    self.sectionToAgendaDelegate?.agendaBatchId(user: user, batchId: self.sectionAgenda.first?.batchId ?? 0)
+                    self.sectionToAgendaDelegate?.agendaBatchId(user: user, classId: self.sectionAgenda.first?.classId ?? 0, batchId: self.sectionAgenda.first?.batchId ?? 0)
                 }
                 if self.sectionTimetable.count > 0{
                     self.sectionToTimeTableDelegate?.timeTableBatchId(user: user, batchId: self.sectionTimetable.first?.batchId ?? 0)
@@ -2203,7 +2202,7 @@ extension SectionVC{
             //Calendar:
             let emptyChildren = Children(gender: "", cycle: "", photo: "", firstName: "", lastName: "", batchId: 0, imperiumCode: "", className: "", admissionNo: "", bdDate: Date(), isBdChecked: false)
             if self.user.classes.isEmpty{
-                let emptyClass = Class(batchId: 0, className: "", imperiumCode: "")
+                let emptyClass = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
                 self.user.classes = [emptyClass]
             }
             print("delegate1")

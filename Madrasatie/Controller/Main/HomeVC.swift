@@ -77,7 +77,7 @@ class HomeVC: UIViewController {
     var homeDelegate: HomeVCDelegate?
 //    var batchId = 1
 //    var imperiumCode = ""
-    var currentClass = Class(batchId: 1, className: "", imperiumCode: "")
+    var currentClass = Class(classId: 0, batchId: 1, className: "", imperiumCode: "")
     var appTheme: AppTheme!
     var studentOffset = CGFloat(0)
     var loggedInUser: User?
@@ -141,6 +141,7 @@ class HomeVC: UIViewController {
         print("current user", self.user.userName, " ", self.user.firstName)
 //        self.recursiveLogin()
 
+        self.updateUserDetails(user: self.user)
         
         //reset form safe
         SectionVC.canChange = true
@@ -338,7 +339,7 @@ class HomeVC: UIViewController {
                 self.sectionFees.removeAll()
                 self.sectionBlendedLearning.removeAll()
                 for section in sectionData!{
-                    let classIn = Class.init(batchId: section.batchId, className: section.displayName, imperiumCode: section.imperiumCode)
+                    let classIn = Class.init(classId: section.cayId, batchId: section.batchId, className: section.displayName, imperiumCode: section.imperiumCode)
                     switch section.module{
                     case 1://calendar
                         self.sectionCalendar.append(classIn)
@@ -606,7 +607,7 @@ class HomeVC: UIViewController {
             classButton.isHidden = true
             print("classindex7")
             self.classIndex = 0
-            self.currentClass = user.classes.first ?? Class(batchId: 1, className: "", imperiumCode: "")
+            self.currentClass = user.classes.first ?? Class(classId: 0, batchId: 1, className: "", imperiumCode: "")
             studentClass = self.currentClass.className
 //            if studentClass.isEmpty{
 //                classDropDownImageView.isHidden = true
@@ -620,7 +621,7 @@ class HomeVC: UIViewController {
 
             classDropDownImageView.isHidden = true
             classButton.isHidden = false
-            self.currentClass = user.classes.first ?? Class(batchId: 1, className: "", imperiumCode: "")
+            self.currentClass = user.classes.first ?? Class(classId: 0, batchId: 1, className: "", imperiumCode: "")
             nameLabel.text = user.firstName
             lbl_class.text = self.currentClass.className
             lbl_class.isHidden = false
@@ -631,7 +632,7 @@ class HomeVC: UIViewController {
 
             classDropDownImageView.isHidden = true
             classButton.isHidden = false
-            self.currentClass = user.classes.first ?? Class(batchId: 1, className: "", imperiumCode: "")
+            self.currentClass = user.classes.first ?? Class(classId: 0, batchId: 1, className: "", imperiumCode: "")
             print("parent parent::: \(self.currentClass)")
 
             nameLabel.text = user.firstName
@@ -903,8 +904,13 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, 
         case self.collectionView:
             
             if(self.user.blocked){
-                let ok = UIAlertAction(title: "OK".localiz(), style: .default, handler: nil)
-                App.showAlert(self, title: "", message: "Your account has been blocked. Please contact your school".localiz(), actions: [ok])
+//                let ok = UIAlertAction(title: "OK".localiz(), style: .default, handler: nil)
+//                App.showAlert(self, title: "", message: "Your account has been blocked. Please contact your school".localiz(), actions: [ok])
+                
+                let alertController = UIAlertController(title: "", message: "Your account has been blocked. Please contact your school".localiz(), preferredStyle: .alert)
+                // Present the alert
+                present(alertController, animated: true, completion: nil)
+                alertController.view.isUserInteractionEnabled = false
             }
             else{
                 let section = sections[indexPath.row]

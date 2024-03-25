@@ -1087,7 +1087,7 @@ extension LoginVC: ResetPasswordDelegate, ChangePasswordDelegate{
         
 //        self.SignIn(userName: user.userName, password: password, email: "", token: "", clientId: "fb9d80c20956d2e489322564b6b0ef2262b92d51e7d527408567ef4feb3cc045", clientSecret: "bc8a340bdcb3baef7cd031df3f3b843fabfff4561fccae6e647d8812c3e0531a", grantType: "password")
         
-        self.SignIn(userName: user.userName, password: password, schoolUrl: schoolInfo.schoolURL, grantType: "password")
+        self.SignInAfterChangePassword(userName: user.userName, password: password, schoolUrl: schoolInfo.schoolURL, grantType: "password")
     }
     
     
@@ -1152,6 +1152,66 @@ extension LoginVC{
             }
         }
     }
+    
+    func SignInAfterChangePassword(userName: String, password: String, schoolUrl: String, grantType: String){
+            let indicatorView = App.loading()
+            indicatorView.tag = 100
+            self.view.addSubview(indicatorView)
+            
+            Request.shared.SignIn(userName: userName, password: password, schoolUrl: schoolUrl, grantType: grantType) { (message, userData, status) in
+                if status == 200{
+    //                self.updateUserDetails(id: userData!.userId, token: userData!.token, schoolUrl: schoolUrl, password: userData!.password)
+                    print("user user: \(self.user)")
+                    
+                    let managedContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
+
+                    // Step 1: Fetch the user you want to update
+                    let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "USER")
+
+
+                    do {
+                        if let users = try managedContext.fetch(fetchRequest) as? [USER] {
+                                if users != nil{
+                                    for user in users{
+                                        print("user user1: \(self.user.userId)")
+
+                                        let idd = user.integer(forKey: "userId")
+                                        print("user user2: \(idd)")
+
+                                        if(idd == user.userId){
+                                            user.password = password
+                                        }
+                                        print("user user3: \(user.password)")
+
+                                    }
+                                }
+                                
+                                // Step 3: Save the managed object context to persist the changes
+                                do {
+                                    try managedContext.save()
+                                    self.showHome()
+                                    print("User updated successfully: \(users)")
+                                } catch {
+                                    print("Error saving user update: \(error.localizedDescription)")
+                                }
+                            
+                        }
+                    } catch {
+                        print("Error fetching user: \(error.localizedDescription)")
+                    }
+                    
+                    
+
+                }
+                else{
+                    let ok = UIAlertAction(title: "OK".localiz(), style: .default, handler: nil)
+                    App.showAlert(self, title: "ERROR".localiz(), message: message ?? "", actions: [ok])
+                }
+                if let viewWithTag = self.view.viewWithTag(100){
+                    viewWithTag.removeFromSuperview()
+                }
+            }
+        }
     
     func updateUserDetails(id: Int, token: String, schoolUrl: String, password: String){
             let indicatorView = App.loading()

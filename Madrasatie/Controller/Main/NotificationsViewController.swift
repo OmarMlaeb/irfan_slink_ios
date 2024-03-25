@@ -26,8 +26,12 @@ class NotificationsViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     override func viewWillAppear(_ animated: Bool) {if(self.user.blocked){
-        let ok = UIAlertAction(title: "OK".localiz(), style: .default, handler: nil)
-        App.showAlert(self, title: "", message: "Your account has been blocked. Please contact your school".localiz(), actions: [ok])
+//        let ok = UIAlertAction(title: "OK".localiz(), style: .default, handler: nil)
+//        App.showAlert(self, title: "", message: "Your account has been blocked. Please contact your school".localiz(), actions: [ok])
+        let alertController = UIAlertController(title: "", message: "Your account has been blocked. Please contact your school".localiz(), preferredStyle: .alert)
+        // Present the alert
+        present(alertController, animated: true, completion: nil)
+        alertController.view.isUserInteractionEnabled = false
     }
     else{
         getNotification(user: self.user, language: "")

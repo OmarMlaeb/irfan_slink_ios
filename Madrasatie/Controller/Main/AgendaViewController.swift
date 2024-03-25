@@ -63,6 +63,7 @@ class AgendaViewController: CollapsableTableViewController, ChartViewDelegate, U
     var teacherSubjectArray: [Subject] = []
     var teacherTermsArray: [Subject] = []
     var assessmentsType: [AssessmentType] = []
+    var classId: Int!
     var batchId: Int!
     var selectCalendarDate = ""
     var allStudents = true
@@ -4607,13 +4608,14 @@ extension AgendaViewController: SectionVCToAgendaDelegate{
     
     /// Description:
     /// - This function is called from Section page when class changed.
-    func agendaBatchId(user: User, batchId: Int) {
+    func agendaBatchId(user: User, classId: Int, batchId: Int) {
         print("weekly pressed")
         self.user = user
+        self.classId = classId
         self.batchId = batchId
 //        SectionVC.didLoadAgenda = false
         if self.agendaTableView != nil{
-            if batchId == 0 && user.classes.isEmpty && (user.userType == 2 || user.userType == 1){
+            if classId == 0 && batchId == 0 && user.classes.isEmpty && (user.userType == 2 || user.userType == 1){
 //                self.agendaDelegate?.agendaToCalendar()
             }else{
                 self.getAgendaData()

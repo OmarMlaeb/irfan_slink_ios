@@ -59,7 +59,7 @@ class AttendanceViewController: UIViewController {
     var attendanceDate = Date()
     var filterAttendanceView: AttendanceType?
 //    var batchId: Int!
-    var currentClass: Class! = Class(batchId: 0, className: "", imperiumCode: "")
+    var currentClass: Class! = Class(classId: 0, batchId: 0, className: "", imperiumCode: "")
     var selectCalendarDate = ""
     var appTheme: AppTheme!
     var daysId: [Int] = []
